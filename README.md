@@ -1,3 +1,21 @@
+# Fluid Water Drop Navigation Bar
+
+A highly customizable Jetpack Compose bottom navigation component with a unique fluid, water-drop-like animation.
+
+## Demo
+
+![Fluid Nav Animation Demo](assets/bottom_nav_demo.gif)
+
+---
+
+## Features
+
+* Smooth, fluid animation.
+* Customizable colors, icons, and animation speeds.
+* Built with Jetpack Compose, Kotlin DSL, and Version Catalogs.
+
+---
+
 ## Installation
 
 1.  **Add to your root `settings.gradle.kts`:**
@@ -16,7 +34,6 @@
 2.  **Add the dependency to your app module's `build.gradle.kts`:**
     ```kotlin
     dependencies {
-        implementation("com.bharat1320.fluidwaterdropnav:fluidwaterdropnav:1.0.0") // Replace 1.0.0 with the latest version
+        implementation("com.bharat1320.fluidwaterdropnav:fluidwaterdropnav:1.0.0")
     }
     ```
-    *(You'll update this with the real coordinates once published)*
