@@ -84,6 +84,7 @@ fun WaterDropBottomNav(
     iconSize: Dp = 24.dp, // Size of the actual icons within their space
     bottomPaddingForDrop: Float = 4f, // Padding for the small circle inside the bubble
     initialIconScale: Float = 0.4f, // Start scale for pop-in animation
+    waterDropletSize: Dp = 8.dp,
 
     // 4. Animation timings & specs
     animationDurationMillis: Int = 300,
@@ -269,7 +270,7 @@ fun WaterDropBottomNav(
             Box(
                 modifier = Modifier
                     .padding(bottom = waterDropBottomPadding.value.dp)
-                    .size(8.dp)
+                    .size(waterDropletSize)
                     .clip(CircleShape)
                     .align(Alignment.BottomCenter)
                     .background(accentColor)

@@ -1,57 +1,16 @@
-#[versions]
-#agp = "8.10.0"
-#kotlin = "2.0.21"
-#coreKtx = "1.16.0"
-#junit = "4.13.2"
-#junitVersion = "1.2.1"
-#espressoCore = "3.6.1"
-#lifecycleRuntimeKtx = "2.9.1"
-#activityCompose = "1.10.1"
-#composeBom = "2024.09.00"
-#
-#[libraries]
-#androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-#junit = { group = "junit", name = "junit", version.ref = "junit" }
-#androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-#androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-#androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
-#androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-#androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-#androidx-ui = { group = "androidx.compose.ui", name = "ui" }
-#androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-#androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-#androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-#androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-#androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-#androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-#
-#[plugins]
-#android-application = { id = "com.android.application", version.ref = "agp" }
-#kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-#kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
-# gradle/libs.versions.toml
-
 [versions]
-# Android Gradle Plugin
-agp = "8.2.0" # Always use the latest stable version
-# Kotlin
-kotlin = "1.9.23" # Always use the latest stable version
-# Jetpack Compose BOM (Bill of Materials) - manages Compose versions
-composeBom = "2024.06.00" # Always use the latest stable BOM
-# AndroidX Activity & Lifecycle
+agp = "8.2.0"
+kotlin = "1.9.23"
+composeBom = "2024.06.00"
 androidxActivityCompose = "1.9.0"
 androidxLifecycleRuntimeKtx = "2.8.0"
-# Material3 (optional if you're using Material2 or custom)
-androidxMaterial3 = "1.2.1" # Latest stable Material3 version
+androidxMaterial3 = "1.2.1"
+composeCompiler = "1.5.11"
 
 # Testing dependencies (for both app and library if you add tests)
 junit = "4.13.2"
 androidxJunit = "1.1.5"
 androidxEspresso = "3.5.1"
-coreKtx = "1.16.0"
-appcompat = "1.7.1"
-material = "1.12.0"
 
 [libraries]
 # Compose BOM
@@ -76,9 +35,6 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 
 [plugins]
